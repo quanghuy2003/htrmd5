@@ -1,0 +1,20 @@
+<table class="table">
+  <thead class="table-dark">
+<!--  <button [routerLink]="['addProduct']">add</button>-->
+<a routerLink="addProduct">add</a>
+  <tr>
+    <th>name</th>
+    <th>price</th>
+    <th>description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let e of products">
+    <th>{{e.title}}</th>
+    <th>{{e.price}}</th>
+    <th>{{e.description}}</th>
+        <button [routerLink]="['/editProduct',e.id]">edit</button>
+    <button  (click)="delete()">xóa</button>
+  </tr>
+  </tbody>
+</table>

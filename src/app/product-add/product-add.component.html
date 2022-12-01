@@ -1,0 +1,22 @@
+<h1> CREATE A NEW PRODUCT </h1>
+
+<form [formGroup]="productForm"(ngSubmit)="add()">
+  <table>
+    <tr>
+      <td> PRODUCT NAME: </td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td> PRICE:</td>
+      <td><input type="text" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>DESCRIPTION:</td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button >CREATE NEW</button></td>
+    </tr>
+  </table>
+</form>
